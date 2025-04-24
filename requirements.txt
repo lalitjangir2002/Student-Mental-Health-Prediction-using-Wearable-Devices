@@ -5,3 +5,7 @@ matplotlib
 seaborn
 openpyxl
 joblib
+streamlit
+plotly
+requests
+python-dotenv
