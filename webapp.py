@@ -14,7 +14,7 @@ model = joblib.load('mental_health_predictor_ensemble.joblib')
 def get_database_connection():
     """Connect to MongoDB."""
     try:
-        client = MongoClient('mongodb+srv://lalit_read:123456789lalit@pacman.zqufs.mongodb.net/mentalHealthDB')
+        client = MongoClient('')
         db = client['mentalHealthDB']
         collection = db['dashboards']
         docs = list(collection.find({'_id' : ObjectId("680893c53f20e5bc586961ce")}))
